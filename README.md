@@ -1,4 +1,4 @@
-# Library Management System -All the API are attached in file named Library Management System
+# Library Management System -All the API are attached in file named Library Management System -All the API are tested on Postman
 
 This is a Django-based Library Management System API that allows users to manage books and library members. The system supports operations such as adding, updating, deleting, and retrieving book details, as well as managing library members.
 
@@ -44,12 +44,13 @@ Step 4: Run Migrations
 Apply database migrations to set up the necessary tables:
 
 
+python manage.py makemigrations
+
 python manage.py migrate
+
 Step 5: Create a Superuser (Optional)
 To access the Django admin panel, create a superuser:
 
-python manage.py createsuperuser
-Follow the prompts to set up a username, email, and password.
 
 Step 6: Run the Development Server
 Start the Django development server:
@@ -62,16 +63,24 @@ API Endpoints
 
 Books
 GET /api/books/: List all books.
+
 POST /api/books/: Create a new book.
+
 GET /api/books/{id}/: Get details of a book by ID.
+
 PUT /api/books/{id}/: Update book details by ID.
+
 DELETE /api/books/{id}/: Delete a book by ID.
 
 Members
 GET /api/members/: List all members.
+
 POST /api/members/: Create a new member.
+
 GET /api/members/{id}/: Get details of a member by ID.
+
 PUT /api/members/{id}/: Update member details by ID.
+
 DELETE /api/members/{id}/: Delete a member by ID.
 
 
